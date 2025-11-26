@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cena de Fin de Año - Conorvial</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <img src="./img/logo_conorvial.svg" alt="Conorvial" class="logo">
+    </header>
+
+    <div class="container">
+        <!-- HERO -->
+        <section class="hero">
+            <img src="./img/Fondo2.jpg" class="hero-bg" alt="Cena de fin de año">
+    
+            <div class="hero-content">
+                <div class="hero-title">
+                    <h1>CENA DE FIN DE AÑO</h1>
+                </div>
+    
+                <div class="countdown">
+                    <div class="cd-item cd-days">
+                        <span id="cd-days">00</span>
+                        <p>Días</p>
+                    </div>
+                    <div class="cd-item cd-hours">
+                        <span id="cd-hours">00</span>
+                        <p>Horas</p>
+                    </div>
+
+                    <!-- Estos se ocultarán en mobile -->
+                    <div class="cd-item cd-minutes">
+                        <span id="cd-minutes">00</span>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="cd-item cd-seconds">
+                        <span id="cd-seconds">00</span>
+                        <p>Segundos</p>
+                    </div>
+                </div>
+    
+                <button class="btn-confirmar" id="openModalBtn">Confirmar</button>
+            </div>
+        </section>
+    
+        <!-- DESCRIPCIÓN -->
+        <section class="descripcion">
+            <p>
+                Una noche especial para despedir el año junto a todo el equipo de Conorvial S.A.
+                Celebración, compañerismo y un cierre inolvidable.
+            </p>
+    
+            <h3>
+                Te esperamos el día viernes 12 de diciembre a las 20:30 hs.
+            </h3>
+        </section>
+    
+        <!-- LUGAR -->
+        <section class="lugar">
+            <h2>LUGAR</h2>
+    
+            <div class="lugar-img-container">
+                <img src="./img/imagen_MonteAlto.jpg" alt="Lugar del evento" class="lugar-img">
+                <h2 class="titulo-monte">MONTE ALTO</h2>
+            </div>
+        </section>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modalConfirmar" class="modal">
+        <div class="modal-content">
+            <form action="" id="form">
+                <span class="close">&times;</span>
+    
+                <h2>Confirmar asistencia</h2>
+    
+                <label>Apellido y Nombre</label>
+                <input type="text" class="nombre" id="nombre" placeholder="Ej: Pérez Juan">
+                <input type="submit" class="btn-enviar" value="Enviar"> 
+                <span id="spanerror">Error al enviar</span>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
