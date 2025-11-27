@@ -1,8 +1,9 @@
-// Fecha del evento
-const eventDate = new Date("2025-12-12T22:20:30").getTime();
+// Fecha del evento en horario LOCAL (Argentina si tu PC está en GMT-3)
+const eventDate = new Date(2025, 11, 12, 20, 30, 0).getTime();
+// Ojo: MES 11 = Diciembre (enero = 0)
 
 function actualizarCountdown() {
-    const now = new Date().getTime();
+    const now = Date.now();
     const diff = eventDate - now;
 
     if (diff <= 0) return;
